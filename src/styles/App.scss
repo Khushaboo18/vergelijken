@@ -1,0 +1,10 @@
+@import "./variables";
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color: $secondary-color;
+  padding: $margin;
+  font-weight: bold;
+}

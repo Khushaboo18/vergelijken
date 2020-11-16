@@ -1,0 +1,84 @@
+@import "./variables";
+
+.product-name {
+  color: $secondary-color;
+  font-size: $header-font-size;
+  height: 60px;
+}
+.product-price {
+  font-size: $price-font-size;
+}
+.product-price-desc {
+  color: $highlight-color;
+  font-size: $header-font-size;
+  font-weight: normal;
+}
+.product-filter {
+  .filter-header {
+    font-size: $filter-header-font-size;
+    color: $secondary-color;
+  }
+  .filter-items {
+    label {
+      display: block;
+      text-indent: -$filter-padding;
+      padding-left: $filter-padding;
+      padding-right: $filter-padding;
+      span {
+        vertical-align: middle;
+      }
+    }
+  }
+  input {
+    margin-right: $margin;
+    vertical-align: middle;
+  }
+  font-size: $header-font-size;
+}
+.product-remove-btn {
+  margin-left: 90%;
+  color: $secondary-color;
+  i {
+    font-size: $header-font-size + 6px;
+  }
+}
+.product-image {
+  text-align: center;
+  height: 200px;
+  img {
+    width: 100%;
+  }
+}
+.table thead th {
+  border-bottom: none !important;
+  vertical-align: top;
+}
+.product-name-header td {
+  border-top: none;
+}
+tbody tr:first-child td {
+  border-top: none;
+}
+hr {
+  margin-bottom: 0;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+.highlight-row {
+  background-color: $highlight-color;
+}
+tbody tr td {
+  font-size: $body-font-size;
+  font-weight: bold;
+}
+tbody tr td:first-child {
+  font-weight: normal;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+thead tr th tr:last-child,
+.table-header {
+  height: 100px;
+  vertical-align: baseline;
+}
+.product-filter {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
