@@ -33,3 +33,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 -> Bootstrap to have a base responsive design for table.
 -> Axios to get API response because of its wide browser support.
 -> Application supporting Browser backward compatibility (IE11).
+-> Webpack is preinstalled while creating app with create-react-app to bundle the application.
