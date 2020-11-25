@@ -3,7 +3,6 @@
 .product-name {
   color: $secondary-color;
   font-size: $header-font-size;
-  height: 60px;
 }
 .product-price {
   font-size: $price-font-size;
@@ -52,6 +51,8 @@
 .table thead th {
   border-bottom: none !important;
   vertical-align: top;
+  width: 20%;
+  padding: 8px 0px 0px 10px;
 }
 .product-name-header td {
   border-top: none;
@@ -81,4 +82,7 @@ thead tr th tr:last-child,
 }
 .product-filter {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.product-name-header {
+  height: 93px;
 }
