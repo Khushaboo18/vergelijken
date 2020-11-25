@@ -8,14 +8,11 @@ class ProductView extends Component {
     // Binding events with this
     this.hideProduct = this.hideProduct.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    let handleHide = this.hideProduct;
-    if (this.props.onHide) {
-      handleHide = this.props.onHide
-    }
+    
     this.state = {
       productDataList: this.props.data,
       productListTodisplay: this.props.data,
-      handleHideProduct: handleHide,
+      handleHideProduct: this.hideProduct,
       checkedItems:this.props.checkboxList
     };
   }
@@ -24,7 +21,7 @@ class ProductView extends Component {
     // creating a comparison table having thead to display products and tbody to display features
   return (
     <div className="compare-table">
-        <table className="table" striped>
+        <table className="table" >
           {this.generateHeader(this.state.productListTodisplay)}
           {this.generateBody(this.state.productListTodisplay)}
         </table>
@@ -65,15 +62,9 @@ class ProductView extends Component {
     return (
       <th key={i} className="table-header">
         <tr>
-          {(() => {
-            if (this.props.hideItemOption) {
-              return (
-                <div className="product-remove-btn" onClick={() => { this.state.handleHideProduct(product.Artikelnummer) }}>
-                  <i className="fa fa-trash"></i>
-                </div>
-              );
-            }
-          })()}
+          <div className="product-remove-btn" onClick={() => { this.state.handleHideProduct(product.Artikelnummer) }}>
+             <i className="fa fa-trash"></i>
+          </div>
           <div className="product-image">
             <img
               src={product.productImage}
