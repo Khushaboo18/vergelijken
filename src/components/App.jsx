@@ -58,7 +58,7 @@ const App = () => {
   //Render ProductView component only when API response data is not null
   function renderProductView(){
     if (data.items) {
-      return <ProductView features={featureList} data={products} checkboxList={checkboxList} hideItemOption = {true}/>
+      return <ProductView features={featureList} data={products} checkboxList={checkboxList} />
     }
   }
 
